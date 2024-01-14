@@ -1,8 +1,12 @@
-# Welcome to your CDK TypeScript project
+# "Hello World" AWS Lambda (Rust) CDK
 
-This is a blank project for CDK development with TypeScript.
+This project uses CDK to create a lambda function from a zip file in S3.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+In this case the lambda was built and then deployed to s3 using the https://github.com/awslabs/aws-lambda-rust-runtime project:
+
+`cargo lambda build --release`
+
+`cargo lambda deploy --s3-bucket hello-world-aws-lambda-rust-runtime`
 
 ## Useful commands
 
